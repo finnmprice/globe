@@ -1,0 +1,1 @@
+{ "dependencies": { "express": "^4.19.2", "three": "^0.166.1" }, "scripts": { "start": "node server.js" } }
