@@ -1,0 +1,340 @@
+[
+    {
+      "name": "all",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=active&FORMAT=tle",
+      "filename": "data/all.txt",
+      "type": "other"
+    },
+    {
+      "name": "starlink",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=starlink&FORMAT=tle",
+      "filename": "data/starlink.txt",
+      "type": "starlink",
+      "description": "communication"
+    },
+    {
+      "name": "cosmos-1408-debris",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=cosmos-1408-debris&FORMAT=tle",
+      "filename": "data/cosmos-1408_debris.txt",
+      "type": "debris",
+      "description": "cosmos 1408 debris"
+    },
+    {
+      "name": "fengyun-debris",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=fengyun-1c-debris&FORMAT=tle",
+      "filename": "data/fengyun-1C_debris.txt",
+      "type": "debris",
+      "description": "fengyun 1c debris"
+    },
+    {
+      "name": "iridium-33-debris",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=iridium-33-debris&FORMAT=tle",
+      "filename": "data/iridium-33_debris.txt",
+      "type": "debris",
+      "description": "iridium 33 debris"
+    },
+    {
+      "name": "cosmos-2251-debris",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=cosmos-2251-debris&FORMAT=tle",
+      "filename": "data/cosmos-2251_debris.txt",
+      "type": "debris",
+      "description": "cosmos 2251 debris"
+    },
+    {
+      "name": "noaa",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=noaa&FORMAT=tle",
+      "filename": "data/noaa.txt",
+      "type": "weather"
+    },
+    {
+      "name": "goes",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=goes&FORMAT=tle",
+      "filename": "data/goes.txt",
+      "type": "weather"
+    },
+    {
+      "name": "weather",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=weather&FORMAT=tle",
+      "filename": "data/weather.txt",
+      "type": "weather"
+    },
+    {
+      "name": "earth-resources",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=resource&FORMAT=tle",
+      "filename": "data/earth_resources.txt",
+      "type": "weather",
+      "description": "resources"
+    },
+    {
+      "name": "sarsat",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=sarsat&FORMAT=tle",
+      "filename": "data/sarsat.txt",
+      "type": "weather",
+      "description": "search & rescue"
+    },
+    {
+      "name": "disaster-monitor",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=dmc&FORMAT=tle",
+      "filename": "data/disaster-monitor.txt",
+      "type": "weather",
+      "description": "disaster monitoring"
+    },
+    {
+      "name": "tdrss",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=tdrss&FORMAT=tle",
+      "filename": "data/tdrss.txt",
+      "type": "weather",
+      "description": "nasa tracking and data"
+    },
+    {
+      "name": "argos",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=argos&FORMAT=tle",
+      "filename": "data/argos.txt",
+      "type": "weather",
+      "description": "environmental monitoring"
+    },
+    {
+      "name": "planet",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=planet&FORMAT=tle",
+      "filename": "data/planet.txt",
+      "type": "weather",
+      "description": "imagery"
+    },
+    {
+      "name": "spire",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=spire&FORMAT=tle",
+      "filename": "data/spire.txt",
+      "type": "weather"
+    },
+    {
+      "name": "active-geo",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=geo&FORMAT=tle",
+      "filename": "data/active-geo.txt",
+      "type": "communication"
+    },
+    {
+      "name": "x-comm",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=x-comm&FORMAT=tle",
+      "filename": "data/x-comm.txt",
+      "type": "communication",
+      "description": "experimental communication"
+    },
+    {
+      "name": "amateur-radio",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=amateur&FORMAT=tle",
+      "filename": "data/a-radio.txt",
+      "type": "communication",
+      "description": "amateur-radio"
+    },
+    {
+      "name": "other-comm",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=other-comm&FORMAT=tle",
+      "filename": "data/other-comm.txt",
+      "type": "communication"
+    },
+    {
+      "name": "geo-protected",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?SPECIAL=gpz&FORMAT=tle",
+      "filename": "data/geo-protected-plus.txt",
+      "type": "communication"
+    },
+    {
+      "name": "intelsat",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=intelsat&FORMAT=tle",
+      "filename": "data/intelsat.txt",
+      "type": "intelsat",
+      "description": "communication"
+    },
+    {
+      "name": "iridium",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=iridium&FORMAT=tle",
+      "filename": "data/iridium.txt",
+      "type": "iridium",
+      "description": "communication"
+    },
+    {
+      "name": "orbcomm",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=orbcomm&FORMAT=tle",
+      "filename": "data/orbcomm.txt",
+      "type": "orbcomm",
+      "description": "communication"
+    },
+    {
+      "name": "swarm",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=swarm&FORMAT=tle",
+      "filename": "data/swarm.txt",
+      "type": "swarm",
+      "description": "communication"
+    },
+    {
+      "name": "ses",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=ses&FORMAT=tle",
+      "filename": "data/ses.txt",
+      "type": "ses",
+      "description": "communication"
+    },
+    {
+      "name": "iridium-next",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=iridium-NEXT&FORMAT=tle",
+      "filename": "data/iridium-next.txt",
+      "type": "iridium",
+      "description": "communication"
+    },
+    {
+      "name": "oneweb",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=oneweb&FORMAT=tle",
+      "filename": "data/oneweb.txt",
+      "type": "oneweb",
+      "description": "communication"
+    },
+    {
+      "name": "globalstar",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=globalstar&FORMAT=tle",
+      "filename": "data/globalstar.txt",
+      "type": "globalstar",
+      "description": "communication"
+    },
+    {
+      "name": "satnogs",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=satnogs&FORMAT=tle",
+      "filename": "data/satnogs.txt",
+      "type": "satnogs",
+      "description": "communication"
+    },
+    {
+      "name": "gorizont",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=gorizont&FORMAT=tle",
+      "filename": "data/gorizont.txt",
+      "type": "gorizont",
+      "description": "communication"
+    },
+    {
+      "name": "raduga",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=raduga&FORMAT=tle",
+      "filename": "data/raduga.txt",
+      "type": "raduga",
+      "description": "communication"
+    },
+    {
+      "name": "molniya",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=molniya&FORMAT=tle",
+      "filename": "data/molniya.txt",
+      "type": "molniya",
+      "description": "communication"
+    },
+    {
+      "name": "gnss",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=gnss&FORMAT=tle",
+      "filename": "data/gnss.txt",
+      "type": "gnss",
+      "description": "navigation"
+    },
+    {
+      "name": "galileo",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=galileo&FORMAT=tle",
+      "filename": "data/galileo.txt",
+      "type": "galileo",
+      "description": "navigation"
+    },
+    {
+      "name": "gpsoperational",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=gps-ops&FORMAT=tle",
+      "filename": "data/gps-operational.txt",
+      "type": "gpsoperational",
+      "description": "navigation"
+    },
+    {
+      "name": "beidou",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=beidou&FORMAT=tle",
+      "filename": "data/beidou.txt",
+      "type": "beidou",
+      "description": "navigation"
+    },
+    {
+      "name": "glonass",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=glo-ops&FORMAT=tle",
+      "filename": "data/glonass.txt",
+      "type": "glonass",
+      "description": "navigation"
+    },
+    {
+      "name": "waas",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=sbas&FORMAT=tle",
+      "filename": "data/waas.txt",
+      "type": "waas",
+      "description": "navigation"
+    },
+    {
+      "name": "nnss",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=nnss&FORMAT=tle",
+      "filename": "data/nnss.txt",
+      "type": "nnss",
+      "description": "navy navigation"
+    },
+    {
+      "name": "leo",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=musson&FORMAT=tle",
+      "filename": "data/leo.txt",
+      "type": "leo",
+      "description": "russian navigation"
+    },
+    {
+      "name": "space-earth",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=science&FORMAT=tle",
+      "filename": "data/space-earth.txt",
+      "type": "science",
+      "description": "space earth science"
+    },
+    {
+      "name": "geodetect",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=geodetic&FORMAT=tle",
+      "filename": "data/geodetect.txt",
+      "type": "science"
+    },
+    {
+      "name": "engineering",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=engineering&FORMAT=tle",
+      "filename": "data/engineering.txt",
+      "type": "science",
+      "description": "engineering"
+    },
+    {
+      "name": "education",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=education&FORMAT=tle",
+      "filename": "data/education.txt",
+      "type": "science",
+      "description": "education"
+    },
+    {
+      "name": "military",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=military&FORMAT=tle",
+      "filename": "data/military.txt",
+      "type": "military"
+    },
+    {
+      "name": "cube",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=cubesat&FORMAT=tle",
+      "filename": "data/cube.txt",
+      "type": "cube"
+    },
+    {
+      "name": "radar",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=radar&FORMAT=tle",
+      "filename": "data/radar.txt",
+      "type": "radar"
+    },
+    {
+      "name": "spacestation",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=tle",
+      "filename": "data/spacestation.txt",
+      "type": "spacestation",
+      "description":"space station"
+    },
+    {
+      "name": "analyst",
+      "url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=analyst&FORMAT=tle",
+      "filename": "data/analyst.txt",
+      "type": "analyst",
+      "description":"analyst satellite"
+    }
+]

@@ -316,9 +316,42 @@ function addSatellite(satelliteData) {
 
         const satelliteGeometry = new THREE.SphereGeometry(0.0025, 8, 8);
 
-        const satelliteColor = satelliteData.type === 'starlink' ? '#18DE1B' :
-        satelliteData.type === 'debris' ? '#EB413D' : satelliteData.type === 'weather' ? '#EB9E02' :
-        satelliteData.type === 'communication' ? '#12EBE7' : '#fff';
+        const satelliteColors = {
+            starlink: '#00FF00',     // bright green
+            debris: '#FF0000',       // bright red
+            weather: '#FFD700',      // gold
+            communication: '#00FFFF', // cyan
+            intelsat: '#FF00FF',     // magenta
+            iridium: '#8B008B',      // dark magenta
+            orbcomm: '#FF4500',      // orange red
+            swarm: '#1E90FF',        // dodger blue
+            ses: '#9400D3',          // dark violet
+            oneweb: '#32CD32',       // lime green
+            globalstar: '#DAA520',   // goldenrod
+            satnogs: '#FF69B4',      // hot pink
+            gorizont: '#CD853F',     // peru
+            raduga: '#FF6347',       // tomato
+            molniya: '#20B2AA',      // light sea green
+            gnss: '#6A5ACD',         // slate blue
+            galileo: '#7B68EE',      // medium slate blue
+            gpsoperational: '#0000CD', // medium blue
+            beidou: '#00BFFF',       // deep sky blue
+            glonass: '#4169E1',      // royal blue
+            waas: '#87CEEB',         // sky blue
+            nnss: '#4682B4',         // steel blue
+            leo: '#008080',          // teal
+            science: '#FFE4B5',      // moccasin
+            military: '#808000',     // olive
+            cube: '#DDA0DD',         // plum
+            radar: '#B8860B',        // dark goldenrod
+            spacestation: '#FF1493', // deep pink
+            analyst: '#00FA9A',      // medium spring green
+            other: '#FFFFFF'         // white
+        };
+                        
+        const defaultColor = '#FFFFFF';
+
+        const satelliteColor = satelliteColors[satelliteData.type] || defaultColor;
 
         const satelliteMaterial = new THREE.MeshBasicMaterial({ color: satelliteColor });
         const satelliteMesh = new THREE.Mesh(satelliteGeometry, satelliteMaterial);
