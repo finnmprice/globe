@@ -29,7 +29,7 @@ function fetchAndSaveData(source) {
             console.error(`Error writing ${source.filename}:`, err);
             reject(err);
           } else {
-            console.log(`${source.filename} updated`);
+            // console.log(`${source.filename} updated`);
             resolve();
           }
         });

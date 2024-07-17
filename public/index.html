@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satellites</title>
-    <link rel="icon" type="image/x-icon" href="/textures/favicon.ico">
-
-    <style>
-        body { margin: 0; overflow: none;}
-        canvas { display: block; }
-    </style>
+    <link rel="icon" type="image/x-icon" href="../style/images/favicon.ico">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <div id="loading-indicator" style="position: absolute; top: 10px; left: 10px; background-color: rgba(0,0,0,0.7); color: white; padding: 5px; font-size: 12px; font-family: monospace; border-radius: 10px;">0/0</div>
+    <div id="loading-indicator" style="position: fixed; bottom: 10px; right: 10px; width: 40px; height: 40px; z-index: 1000;">
+        <svg class="progress-ring" width="40" height="40">
+          <circle class="progress-ring__circle" stroke="white" stroke-width="3" fill="transparent" r="13" cx="20" cy="20"></circle>
+          <circle class="progress-ring__satellite" fill="white" r="2.25" cx="20" cy="7"></circle>
+        </svg>
+      </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/satellite.js/4.0.0/satellite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>

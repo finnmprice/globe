@@ -251,6 +251,8 @@ function fetchSatelliteData() {
         .finally(() => {
             isFetchingData = false;
         });
+    
+    updateLoadingIndicator();
 }
 
 let satelliteQueue = [];
@@ -277,20 +279,48 @@ function processSatelliteQueue() {
     setTimeout(processSatelliteQueue, 80);
 }
 
+let lastProgressPercentage = 0;
+
 function updateLoadingIndicator() {
     const totalSatellites = satelliteQueue.length + satellites.length;
     const loadedSatellites = satellites.length;
-    const progressPercentage = (loadedSatellites / totalSatellites) * 100;
+    const targetProgressPercentage = totalSatellites > 0 ? (loadedSatellites / totalSatellites) * 100 : 0;
 
     const loadingIndicator = document.getElementById('loading-indicator');
     if (loadingIndicator) {
-        loadingIndicator.style.width = `${progressPercentage}%`;
-        loadingIndicator.textContent = `${loadedSatellites}/${totalSatellites}`;
-    }
+        const circle = loadingIndicator.querySelector('.progress-ring__circle');
+        const satellite = loadingIndicator.querySelector('.progress-ring__satellite');
+        const radius = circle.r.baseVal.value;
+        const circumference = radius * 2 * Math.PI;
+        
+        if (isNaN(lastProgressPercentage)) {
+            lastProgressPercentage = 0;
+        }
 
-    if (loadedSatellites === totalSatellites) {
-        if (loadingIndicator) {
-            loadingIndicator.style.display = 'none';
+        lastProgressPercentage += (targetProgressPercentage - lastProgressPercentage) * 0.1;
+        const progressPercentage = Math.max(lastProgressPercentage, 0);
+
+        circle.style.strokeDasharray = `${circumference} ${circumference}`;
+        const offset = circumference - (progressPercentage / 100) * circumference;
+        circle.style.strokeDashoffset = offset;
+
+        const angle = (progressPercentage / 100) * Math.PI * 2 - Math.PI / 2;
+        const satelliteRadius = radius + 2.25; // 2.25 is the radius of the satellite
+        const satelliteX = 20 + satelliteRadius * Math.cos(angle);
+        const satelliteY = 20 + satelliteRadius * Math.sin(angle);
+
+        if (!isNaN(satelliteX) && !isNaN(satelliteY)) {
+            satellite.setAttribute('cx', satelliteX);
+            satellite.setAttribute('cy', satelliteY);
+        }
+
+        if (loadedSatellites === totalSatellites && totalSatellites > 0) {
+            loadingIndicator.style.opacity = '0';
+            setTimeout(() => {
+                loadingIndicator.style.display = 'none';
+            }, 500);
+        } else {
+            requestAnimationFrame(updateLoadingIndicator);
         }
     }
 }
